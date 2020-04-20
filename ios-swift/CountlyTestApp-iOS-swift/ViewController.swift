@@ -414,10 +414,10 @@ class ViewController: UIViewController
                     testTask.resume()
                 break
                 
-                case 14: Countly.sharedInstance().addException(forAPM: "http://finance.yahoo.com")
+            case 14: Countly.sharedInstance().addException(forAutoViewTracking: "http://finance.yahoo.com")
                 break
 
-                case 15: Countly.sharedInstance().removeException(forAPM: "http://finance.yahoo.com")
+            case 15: Countly.sharedInstance().removeException(forAutoViewTracking: "http://finance.yahoo.com")
                 break
 
                 default:break
@@ -473,7 +473,7 @@ class ViewController: UIViewController
                 case 9: Countly.sharedInstance().removeException(forAutoViewTracking:"MyViewControllerCustomTitleView")
                 break
 
-                case 10: Countly.sharedInstance().reportView("ManualViewReportExample")
+            case 10: Countly.sharedInstance().recordView("ManualViewReportExample")
                 break
 
                 default: break
